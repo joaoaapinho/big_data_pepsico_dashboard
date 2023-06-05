@@ -310,8 +310,8 @@ if selected == "US - Market Statistics":
     st.subheader("Data Visualization:")
 
     # Showing the charts.
-    st.plotly_chart(revenue_by_state_chart)
-    st.plotly_chart(top_5_locations_chart)
+    st.plotly_chart(revenue_by_state_chart, use_container_width=True)
+    st.plotly_chart(top_5_locations_chart, use_container_width=True)
 
 # ------------------------
 # Tab 2 - NY Statistics
@@ -522,9 +522,9 @@ if selected == "NY - Market Statistics":
 
 
     # Showing the charts.
-    st.plotly_chart(top_retailers_rev_units_chart)
+    st.plotly_chart(top_retailers_rev_units_chart, use_container_width=True)
 
-    st.plotly_chart(top_product_rev_promo_chart)
+    st.plotly_chart(top_product_rev_promo_chart, use_container_width=True)
 
 # ---------------------------
 # Tab 3 - Product Statistics
@@ -826,10 +826,10 @@ if selected == "NY- Product Statistics":
 
     # Showing the charts:
 
-    st.plotly_chart(rev_units_chart)
-    st.plotly_chart(avg_price_units_chart)
-    st.plotly_chart(pr_revenue_chart)
-    st.plotly_chart(avg_mkt_units_chart)
+    st.plotly_chart(rev_units_chart, use_container_width=True)
+    st.plotly_chart(avg_price_units_chart, use_container_width=True)
+    st.plotly_chart(pr_revenue_chart, use_container_width=True)
+    st.plotly_chart(avg_mkt_units_chart, use_container_width=True)
 
 
 
